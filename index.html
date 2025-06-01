@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Generator Filsafat dan Logika</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: 'Georgia', serif;
+      font-family: Georgia, serif;
       background: linear-gradient(to bottom, #e0eafc, #cfdef3);
       color: #222;
-      padding: 20px;
       margin: 0;
+      padding: 20px;
       text-align: center;
     }
     h1 {
@@ -20,12 +20,11 @@
     button {
       padding: 14px 28px;
       font-size: 18px;
-      margin-bottom: 20px;
-      cursor: pointer;
       background: #0066cc;
       color: white;
       border: none;
       border-radius: 8px;
+      cursor: pointer;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       transition: background 0.3s;
     }
@@ -45,11 +44,9 @@
       border-radius: 6px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .audio-controls {
-      margin-bottom: 20px;
-    }
     audio {
       width: 90%;
+      margin-bottom: 20px;
     }
     @media (min-width: 768px) {
       h1 {
@@ -63,16 +60,16 @@
 </head>
 <body>
 
-<h1>Generator Filsafat dan Logika</h1>
+<h1>🎓 Generator Filsafat dan Logika</h1>
 
-<div class="audio-controls">
-  <audio id="bg-audio" controls autoplay loop>
-    <source src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" type="audio/mp3">
-    Browser Anda tidak mendukung audio.
-  </audio>
-</div>
+<!-- Autoplay Lagu dari GitHub -->
+<audio autoplay loop controls>
+  <source src="https://rakhman-rh.github.io/filosof-generator/assets/audio/lagu.mp3" type="audio/mp3">
+  Browser Anda tidak mendukung audio.
+</audio>
 
 <button onclick="generate()">🎴 Tampilkan Pemikiran Baru</button>
+
 <div id="output"></div>
 
 <script>
@@ -109,7 +106,7 @@
     const div = document.createElement('div');
     div.className = 'quote';
     div.textContent = newPhrase;
-    output.insertBefore(div, output.firstChild); // Menampilkan yang baru di atas
+    output.insertBefore(div, output.firstChild); // Yang baru muncul di atas
   }
 </script>
 
